@@ -58,11 +58,12 @@
       }
 
       a {
+        position: relative;
         display: inline-block;
         padding-bottom: 2px;
         border-bottom: 1px solid transparent;
         font-family: 'Inconsolata', monospace;
-        font-size: 0.75em;
+        font-size: 0.85em;
         color: #031B21;
         text-decoration: none;
         transition: border-bottom-color 300ms;
@@ -70,9 +71,22 @@
       a:hover {
         border-bottom-color: #031B21;
       }
-      a.place {}
-      a.work {}
-      a.fun {}
+      a:after {
+        content: "";
+        font-size: 0.75em;
+      }
+      a.other:after {
+        content: "other";
+        color: #953bb3;
+      }
+      a.work:after {
+        content: "work";
+        color: #f2a776;
+      }
+      a.fun:after {
+        content: "fun";
+        color: #069290;
+      }
 
       li + li {
         margin-top: 1em;
@@ -81,8 +95,15 @@
       ul {
         margin: 0;
         padding: 0;
+        max-width: 700px;
         list-style: none;
-        column-count: 2;
+        column-count: 1;
+      }
+
+      @media (min-width: 426px) {
+        ul {
+          column-count: 2;
+        }
       }
     </style>
 
@@ -95,13 +116,13 @@
     <ul>
 
       <li>
-        <a target="_blank" href="http://www.github.com/vanev" class="place">
+        <a target="_blank" href="http://www.github.com/vanev" class="other">
           Github
         </a>
       </li>
 
       <li>
-        <a target="_blank" href="http://www.twitter.com/evansiegel" class="place">
+        <a target="_blank" href="http://www.twitter.com/evansiegel" class="other">
           Twitter
         </a>
       </li>
