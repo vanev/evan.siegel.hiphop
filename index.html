@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-
     <meta charset="utf-8">
     <title>Evan Siegel</title>
+    <link rel="stylesheet" href="./main.css">
 
     <script type="text/javascript">
       WebFontConfig = {
@@ -28,155 +27,52 @@
       ga('create', 'UA-17616744-3', 'auto');
       ga('send', 'pageview');
     </script>
-
-    <style>
-      html {
-        opacity: 0;
-        transition: opacity 250ms;
-      }
-      html.wf-active,
-      html.wf-inactive {
-        opacity: 1;
-      }
-
-      body {
-        padding: 2em;
-        margin: 0;
-        font-size: 100%;
-        color: #031B21;
-      }
-
-      h1 {
-        padding: 0;
-        margin: 0;
-        font-size: 0.85em;
-        font-weight: bold;
-        font-family: 'Inconsolata', monospace;
-      }
-      h1 + ul {
-        margin-top: 1em;
-      }
-
-      a {
-        position: relative;
-        display: inline-block;
-        padding-bottom: 2px;
-        border-bottom: 1px solid transparent;
-        font-family: 'Inconsolata', monospace;
-        font-size: 0.85em;
-        color: #031B21;
-        text-decoration: none;
-        transition: opacity 300ms;
-      }
-      a:hover {
-        opacity: 0.6;
-      }
-      a:after {
-        content: "";
-        font-size: 0.75em;
-      }
-      a.other:after {
-        content: "other";
-        color: #953bb3;
-      }
-      a.work:after {
-        content: "work";
-        color: #f2a776;
-      }
-      a.fun:after {
-        content: "fun";
-        color: #069290;
-      }
-
-      li + li {
-        margin-top: 1em;
-      }
-
-      ul {
-        margin: 0;
-        padding: 0;
-        max-width: 700px;
-        list-style: none;
-        column-count: 1;
-      }
-
-      @media (min-width: 426px) {
-        ul {
-          column-count: 2;
-        }
-      }
-    </style>
-
   </head>
-
   <body>
 
-    <h1>Evan Siegel</h1>
+    <h1 class="title">Evan Siegel</h1>
 
-    <ul>
+    <div class="links">
+      <a target="_blank" href="http://www.github.com/vanev" class="link _other">
+        Github
+      </a>
 
-      <li>
-        <a target="_blank" href="http://www.github.com/vanev" class="other">
-          Github
-        </a>
-      </li>
+      <a target="_blank" href="http://www.twitter.com/evansiegel" class="link _other">
+        Twitter
+      </a>
 
-      <li>
-        <a target="_blank" href="http://www.twitter.com/evansiegel" class="other">
-          Twitter
-        </a>
-      </li>
+      <a target="_blank" href="http://www.harrys.com/" class="link link _work">
+        Harry's
+      </a>
 
-      <li>
-        <a target="_blank" href="http://www.harrys.com/" class="work">
-          Harry's
-        </a>
-      </li>
+      <a target="_blank" href="http://www.harrys.com/jimmy-chin" class="link _work">
+        Harry's x Jimmy Chin
+      </a>
 
-      <li>
-        <a target="_blank" href="http://www.harrys.com/jimmy-chin" class="work">
-          Harry's x Jimmy Chin
-        </a>
-      </li>
+      <a target="_blank" href="http://www.realityfantasyleague.com" class="link _work">
+        Reality Fantasy League
+      </a>
 
-      <li>
-        <a target="_blank" href="http://www.realityfantasyleague.com" class="work">
-          Reality Fantasy League
-        </a>
-      </li>
+      <a target="_blank" href="http://www.pinehurstmusic.net" class="link _work">
+        Joelle and the Pinehurst Trio
+      </a>
 
-      <li>
-        <a target="_blank" href="http://www.pinehurstmusic.net" class="work">
-          Joelle and the Pinehurst Trio
-        </a>
-      </li>
+      <a target="_blank" href="http://www.joellelurie.com" class="link _work">
+        Joelle Lurie
+      </a>
 
-      <li>
-        <a target="_blank" href="http://www.joellelurie.com" class="work">
-          Joelle Lurie
-        </a>
-      </li>
+      <a target="_blank" href="http://www.elizabethjohnson.net" class="link _work">
+        Elizabeth Johnson
+      </a>
 
-      <li>
-        <a target="_blank" href="http://www.elizabethjohnson.net" class="work">
-          Elizabeth Johnson
-        </a>
-      </li>
+      <a target="_blank" href="http://www.bowsxarrows.com" class="link _work">
+        Bows X Arrows
+      </a>
 
-      <li>
-        <a target="_blank" href="http://www.bowsxarrows.com" class="work">
-          Bows X Arrows
-        </a>
-      </li>
-
-      <li>
-        <a target="_blank" href="http://www.politishare.com" class="fun">
-          Politishare
-        </a>
-      </li>
-
-    </ul>
+      <a target="_blank" href="http://www.politishare.com" class="link _fun">
+        Politishare
+      </a>
+    </div>
 
   </body>
-
 </html>

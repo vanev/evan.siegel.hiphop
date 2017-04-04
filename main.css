@@ -1,0 +1,73 @@
+html {
+  opacity: 0;
+  transition: opacity 250ms;
+}
+html.wf-active,
+html.wf-inactive {
+  opacity: 1;
+}
+
+body {
+  padding: 2em;
+  margin: 0;
+  font-size: 100%;
+  color: #031B21;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  font-size: 0.85em;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+}
+.title + .links {
+  margin-top: 1.5em;
+}
+
+.link {
+  position: relative;
+  display: block;
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.85em;
+  color: #031B21;
+  text-decoration: none;
+  transition: opacity 300ms;
+}
+.link:hover {
+  opacity: 0.6;
+}
+.link:after {
+  content: "";
+  font-size: 0.75em;
+}
+.link._other:after {
+  content: "other";
+  color: #953bb3;
+}
+.link._work:after {
+  content: "work";
+  color: #f2a776;
+}
+.link._fun:after {
+  content: "fun";
+  color: #069290;
+}
+
+.link + .link {
+  margin-top: 1.5em;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  max-width: 700px;
+  list-style: none;
+  column-count: 1;
+}
+
+@media (min-width: 426px) {
+  .links {
+    column-count: 2;
+  }
+}
