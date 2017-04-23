@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import Portfolio from "./Portfolio.jsx"
 import Resume from "./Resume.jsx"
 
+import "./styles/main.scss"
+
 const Application = () => (
   <Router>
     <div className="Application">

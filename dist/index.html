@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Evan Siegel</title>
-    <link rel="stylesheet" href="./main.css">
+    <style>
+      html { opacity: 0; transition: opacity 250ms; }
+      html.wf-active,
+      html.wf-inactive { opacity: 1; }
+    </style>
 
     <script type="text/javascript">
       WebFontConfig = {
