@@ -1,0 +1,36 @@
+@import "palette";
+
+.link {
+  position: relative;
+  display: block;
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.85em;
+  color: $black;
+  text-decoration: none;
+  transition: opacity 300ms;
+
+  & + & { margin-top: 1.5em; }
+
+  &:hover { opacity: 0.6; }
+
+  &:after {
+    content: "";
+    margin-left: 0.75em;
+    font-size: 0.75em;
+  }
+
+  &._other:after {
+    content: "other";
+    color: $other;
+  }
+
+  &._work:after {
+    content: "work";
+    color: $work;
+  }
+
+  &._fun:after {
+    content: "fun";
+    color: $fun;
+  }
+}

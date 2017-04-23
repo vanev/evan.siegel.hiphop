@@ -1,0 +1,8 @@
+.details {
+  padding: 0;
+  margin: 0;
+  font-size: 0.85em;
+  font-family: 'Inconsolata', monospace;
+
+  & + .resume-items { margin-top: 1.5em; }
+}

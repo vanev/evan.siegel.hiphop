@@ -1,0 +1,20 @@
+@import "palette";
+
+.resume-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 700px;
+
+  & + & { margin-top: 2em; }
+
+  &--header {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+    font-weight: bold;
+    color: $black;
+
+    & + .resume-item { margin-top: 1.5em; }
+  }
+}
