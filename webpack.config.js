@@ -2,7 +2,7 @@ const path = require("path")
 
 module.exports = {
 
-  entry: "./index.js",
+  entry: "./index.jsx",
 
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -12,12 +12,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env'],
+            presets: ['env', 'react'],
           },
         },
       },
