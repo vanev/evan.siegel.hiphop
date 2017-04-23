@@ -1,0 +1,9 @@
+{
+  "name": "evan.siegel.hiphop",
+  "version": "1.0.0",
+  "description": "Evan Siegel's Personal Website",
+  "main": "index.js",
+  "repository": "git@github.com:vanev/evan.siegel.hiphop.git",
+  "author": "Evan Siegel <siegel.evan@gmail.com>",
+  "license": "MIT"
+}
