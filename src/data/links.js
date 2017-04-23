@@ -1,7 +1,7 @@
 const links = [
   {
     key: "1",
-    url: "resume.html",
+    url: "/resume",
     label: "Resume",
     category: "other"
   },
