@@ -1,27 +1,13 @@
-import React, { Component } from "react"
-import Links from "./Links.jsx"
-import links from "./data/links.js"
+import React from "react"
+import { BrowserRouter as Router, Route } from "react-router-dom"
+import Portfolio from "./Portfolio.jsx"
 
-class Application extends Component {
-  constructor() {
-    super()
-
-    this.state = {
-      links
-    }
-  }
-
-  render() {
-    return (
-      <div className="Application">
-
-        <h1 className="title">Evan Siegel</h1>
-
-        <Links links={this.state.links} />
-
-      </div>
-    )
-  }
-}
+const Application = () => (
+  <Router>
+    <div className="Application">
+      <Route exact path="/" component={Portfolio} />
+    </div>
+  </Router>
+)
 
 export default Application
