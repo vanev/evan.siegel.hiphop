@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import ResumeItems from "./ResumeItems.jsx"
-import items from "./data/resume.js"
+import { items, categories } from "./data/resume.js"
+import { prepare } from "./models/ResumeItem.js"
 
 class Resume extends Component {
   constructor() {
@@ -21,7 +22,7 @@ class Resume extends Component {
           <a href="tel:5167329658">516 732 9658</a> | <a href="mailto:siegel.evan@gmail.com" className="detail">siegel.evan@gmail.com</a>
         </p>
 
-        <ResumeItems items={items} />
+        <ResumeItems items={prepare(categories)(items)} />
 
       </div>
     )
