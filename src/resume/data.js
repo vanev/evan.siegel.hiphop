@@ -132,6 +132,7 @@ export const items = {
     title: "History Major, Secondary Education Concentration, B.A.",
     school: "Goucher College",
     location: "Baltimore, MD",
+    start_time: "2007-08",
     end_time: "2011-05",
   },
 
