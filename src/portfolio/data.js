@@ -35,11 +35,6 @@ export const links = [
     category: "work",
   },
   {
-    url: "http://www.joellelurie.com",
-    label: "Joelle Lurie",
-    category: "other",
-  },
-  {
     url: "http://www.elizabethjohnson.net",
     label: "Elizabeth Johnson",
     category: "work",
