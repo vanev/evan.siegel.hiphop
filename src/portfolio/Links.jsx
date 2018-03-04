@@ -3,7 +3,9 @@ import { array } from "prop-types"
 import map from "lodash/fp/map"
 import Link from "./Link.jsx"
 
-const renderLink = (props) => <Link {...props} />
+const key = ({ url, label }) => `${url}-${label}`;
+
+const renderLink = (props) => <Link key={key(props)} {...props} />
 
 const renderLinks = map(renderLink)
 
