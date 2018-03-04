@@ -20,7 +20,7 @@ export const links = [
     category: "work",
   },
   {
-    url: "http://www.harrys.com/jimmy-chin",
+    url: "https://vimeo.com/135709765",
     label: "Harry's x Jimmy Chin",
     category: "work",
   },
