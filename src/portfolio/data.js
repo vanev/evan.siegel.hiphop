@@ -10,11 +10,6 @@ export const links = [
     category: "other",
   },
   {
-    url: "http://www.twitter.com/evansiegel",
-    label: "Twitter",
-    category: "other",
-  },
-  {
     url: "http://www.harrys.com",
     label: "Harry's",
     category: "work",
@@ -43,10 +38,5 @@ export const links = [
     url: "http://www.bowsxarrows.com",
     label: "Bows X Arrows",
     category: "work",
-  },
-  {
-    url: "http://www.politishare.com",
-    label: "Politishare",
-    category: "fun",
   },
 ]
