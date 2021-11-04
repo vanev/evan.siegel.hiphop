@@ -1,0 +1,36 @@
+.root {
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  font-size: 0.85em;
+  font-weight: bold;
+  font-family: "Inconsolata", monospace;
+}
+
+.title + .details {
+  margin-top: 0.5em;
+}
+
+.details {
+  padding: 0;
+  margin: 0;
+  font-size: 0.85em;
+  font-family: "Inconsolata", monospace;
+}
+
+.details + .items {
+  margin-top: 1.5em;
+}
+
+.detail + .detail:before {
+  content: " | ";
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 700px;
+}
