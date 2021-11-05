@@ -11,6 +11,8 @@ const renderItems: (items: Record<number, Item.Item>) => Array<ReactNode> =
   flow(
     Record.toArray,
     Array.map(Tuple.snd),
+    Array.sort(Item.Ord),
+    Array.reverse,
     Array.map((item) => (
       <ListItem
         key={item.id}

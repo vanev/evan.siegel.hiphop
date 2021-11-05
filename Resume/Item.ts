@@ -1,5 +1,7 @@
 import { flow, pipe } from "fp-ts/lib/function";
+import * as D from "fp-ts/lib/Date";
 import * as Option from "fp-ts/lib/Option";
+import * as O from "fp-ts/lib/Ord";
 import * as Tuple from "fp-ts/lib/Tuple";
 import { parse, format } from "date-fns/fp";
 
@@ -86,5 +88,9 @@ export const body = (item: Item): Array<string> => {
       return [];
   }
 };
+
+export const Ord: O.Ord<Item> = O.contramap<Date, Item>((item) => {
+  return item.endTime ? parse(new Date())("yyyy-MM")(item.endTime) : new Date();
+})(D.Ord);
 
 export default Item;
