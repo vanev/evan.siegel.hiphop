@@ -12,6 +12,11 @@ export const items: Array<Item> = [
     category: "other",
   },
   {
+    url: "http://www.grailed.com",
+    label: "Grailed",
+    category: "work",
+  },
+  {
     url: "http://www.harrys.com",
     label: "Harry's",
     category: "work",
@@ -39,6 +44,16 @@ export const items: Array<Item> = [
   {
     url: "http://www.bowsxarrows.com",
     label: "Bows X Arrows",
+    category: "work",
+  },
+  {
+    url: "http://www.vichingoconquers.com",
+    label: "Vichingo Conquers",
+    category: "work",
+  },
+  {
+    url: "http://www.nicholascalcott.com",
+    label: "Nicholas Calcott",
     category: "work",
   },
 ];
