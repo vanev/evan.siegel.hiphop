@@ -1,4 +1,5 @@
 :root {
+  --white: #ffffff;
   --black: #031b21;
   --purple: #953bb3;
   --yellow: #f2a776;
@@ -7,6 +8,8 @@
   --red: #f27783;
   --pale: #baccd2;
 
+  --text: var(--black);
+  --background: var(--white);
   --other: var(--purple);
   --work: var(--yellow);
   --fun: var(--teal);
@@ -14,11 +17,24 @@
   --education: var(--red);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: var(--white);
+    --background: var(--black);
+    --other: var(--purple);
+    --work: var(--yellow);
+    --fun: var(--teal);
+    --leadership: var(--blue);
+    --education: var(--red);
+  }
+}
+
 body {
   padding: 2em;
   margin: 0;
   font-size: 100%;
   color: var(--black);
+  background-color: var(--background);
 }
 
 a {

@@ -7,6 +7,7 @@
   font-size: 0.85em;
   font-weight: bold;
   font-family: "Inconsolata", monospace;
+  color: var(--text);
 }
 
 .title + .items {

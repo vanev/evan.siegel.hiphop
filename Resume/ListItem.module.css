@@ -23,7 +23,7 @@
   font-family: "Inconsolata", monospace;
   font-size: 0.85em;
   font-weight: bold;
-  color: var(--black);
+  color: var(--text);
 }
 
 .header:after {
@@ -41,7 +41,7 @@
   margin: 0;
   font-family: "Inconsolata", monospace;
   font-size: 0.85em;
-  color: var(--black);
+  color: var(--text);
 }
 
 .subtitle + .details {
@@ -54,7 +54,7 @@
   list-style: none;
   font-family: "Inconsolata", monospace;
   font-size: 0.85em;
-  color: var(--black);
+  color: var(--text);
 }
 
 .detail + .detail {

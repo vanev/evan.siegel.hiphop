@@ -3,7 +3,7 @@
   display: block;
   font-family: "Inconsolata", monospace;
   font-size: 0.85em;
-  color: var(--black);
+  color: var(--text);
   text-decoration: none;
   transition: opacity 300ms;
 }

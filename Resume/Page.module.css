@@ -7,6 +7,7 @@
   font-size: 0.85em;
   font-weight: bold;
   font-family: "Inconsolata", monospace;
+  color: var(--text);
 }
 
 .title + .details {
@@ -18,6 +19,7 @@
   margin: 0;
   font-size: 0.85em;
   font-family: "Inconsolata", monospace;
+  color: var(--text);
 }
 
 .details + .items {
