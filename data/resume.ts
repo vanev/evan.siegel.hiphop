@@ -9,6 +9,18 @@ export const items: Record<number, Item> = {
     location: "New York, NY",
     startTime: "2017-10",
     endTime: null,
+    body: [
+      "Responsible for everything that happens in the user's browser and everything that gets the code to their browser.",
+      "Consult with teams across engineering, product, and design to de-risk and unblock projects.",
+      "Mentor multiple junior-, mid-, and senior-level frontend engineers.",
+      "Responsible for long-term thinking around solving technical challenges that create risks to the success of the business, with other Staff Engineers.",
+      "Lead project to migrate content-rich pages to Next.js for server-side rendering to improve SEO and performance.",
+      "Shipped many, many features to our React-powered website and many fewer features (but some!) to our Ruby on Rails–powered API.",
+      "Sponsor and support engineers in major technical projects; e.g. migrating from Flow to Typescript.",
+      "Built an automated deployment tool called Maglev to solve deployment challenges.",
+      "Built first version of our Android application in React Native with a Kotlin engineer.",
+      "Interviewed many engineers, product managers, and designers.",
+    ],
   },
 
   1: {
